@@ -11,6 +11,4 @@ class User(Base):
     email = Column(String, unique=True, nullable=False)
     age = Column(Integer, nullable=True)
     nation = Column(String, nullable=False)
-    profile = relationship("Profile", back_populates="user", uselist=False)
-    address = relationship("Address", back_populates="user", cascade="all, delete-orphan")
-
+ 

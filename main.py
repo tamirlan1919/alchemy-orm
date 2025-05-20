@@ -1,4 +1,3 @@
-from crud import create_profile, create_user, create_address
+from crud import create_user
 
-create_address("Moscow", "Tverskaya", 1)
-create_address("Moscow", "Sholohova", 1)
+create_user("Timerlan", "tima@mail.ru", 23, 'Chechenec')
